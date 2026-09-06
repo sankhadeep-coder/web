@@ -52,6 +52,16 @@ const TEMPLATE_INFO = [
     desc: 'Production-ready commercial layout with full megamenu, campaign hero, "Complete the Look" 1-click outfit bundling, customer social feed, and comprehensive footer.',
     primaryAudience: 'Broad audience; ideal for large catalog scales with seasonal marketing campaigns',
     accentColor: '#FF8A3D'
+  },
+  {
+    id: '06',
+    name: 'Editorial Luxe & Fit',
+    tagline: 'High-Fashion Editorial + Smart Fit Utility',
+    font: 'Playfair Display & Sans',
+    vibe: 'Refined, Intuitive, High-Converting',
+    desc: 'The ultimate parent hybrid: merges high-fashion lookbook aesthetics and poetic editorial curation with Template 3’s intelligent interactive Size Finder and Template 5’s verified parent social proof at the bottom.',
+    primaryAudience: 'Parents desiring bespoke luxury style with foolproof fit precision and verified trust',
+    accentColor: '#8C5E3C'
   }
 ];
 
@@ -94,7 +104,7 @@ export function TemplateSwitcher() {
         <button
           className="switcher-guide-btn"
           onClick={() => setIsShowcaseModalOpen(true)}
-          title="Learn about these 5 design directions"
+          title="Learn about these 6 design directions"
           aria-label="Design Showcase Guide"
         >
           <BookOpen size={16} />
@@ -161,14 +171,14 @@ export function TemplateSwitcher() {
                 Client Demonstration Showcase
               </span>
               <h2 style={{ fontSize: '2rem', fontWeight: 800, color: 'var(--text-primary)', marginBottom: '10px' }}>
-                One Unified Store. Five Unique Experiences.
+                One Unified Store. Six Unique Experiences.
               </h2>
               <p style={{ fontSize: '0.9375rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>
                 Every template connects to the exact same live catalog, persistent cart, wishlist, and interactive sizing engine. Switch templates anytime to demonstrate different brand positioning to your client.
               </p>
             </div>
 
-            {/* The 5 Directions Grid */}
+            {/* The 6 Directions Grid */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '20px', marginBottom: '32px' }}>
               {TEMPLATE_INFO.map((t) => {
                 const isActive = activeTemplate === t.id;

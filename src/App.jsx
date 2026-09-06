@@ -12,12 +12,13 @@ import { TemplateSwitcher } from './components/TemplateSwitcher';
 import { Toast } from './components/Toast';
 import { MobileBottomNav } from './components/MobileBottomNav';
 
-// The 5 Distinct Homepage Design Templates
+// The 6 Distinct Homepage Design Templates
 import { EditorialTemplate } from './templates/EditorialTemplate';
 import { BentoTemplate } from './templates/BentoTemplate';
 import { SmartShoppingTemplate } from './templates/SmartShoppingTemplate';
 import { KidsWorldTemplate } from './templates/KidsWorldTemplate';
 import { CompleteStoreTemplate } from './templates/CompleteStoreTemplate';
+import { EditorialPlusTemplate } from './templates/EditorialPlusTemplate';
 
 function StoreApp() {
   const { activeTemplate } = useStore();
@@ -34,8 +35,11 @@ function StoreApp() {
       case '04':
         return <KidsWorldTemplate />;
       case '05':
-      default:
         return <CompleteStoreTemplate />;
+      case '06':
+        return <EditorialPlusTemplate />;
+      default:
+        return <EditorialPlusTemplate />;
     }
   };
 
